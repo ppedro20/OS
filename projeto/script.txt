@@ -1,0 +1,20 @@
+cd Desktop
+criar script
+
+dentro do script:
+#! /bin/bash
+
+na consola:
+chmod +x nomedoscript
+
+executar script: ./nomedoscript
+
+mandar o output de um script para um file:
+echo "hello bash" > file.txt
+
+igual: -eq
+maior: -gt ou >
+menor: -lt ou <
+
+output do numero de variaveis do array:
+echo $#

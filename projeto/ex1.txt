@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include <string.h>
+
+int main(int argc, char *argv[]){
+
+if(argc == 1){
+printf("Numero Param inválidos --> deve inserir apenas 1 parm .\n %s string1 [string2..] \n",argv[0]);
+return -1;
+}
+
+
+for(int i = 1; i < argc; i++){
+
+int tamstr = strlen(argv[i]);
+char *s = argv[i];
+int nvog = 0; // irá conter somatório de vogais
+
+for(int j = 0; j < tamstr; j++){
+if(s[j] =='a' || s[j] =='e'|| s[j] =='i'|| s[j] =='o'|| s[j] =='u'){
+nvog++;
+}
+}
+
+printf("%d - %s - %d vogais \n",i,argv[i],nvog);
+
+}
+
+
+return 0;
+
+}
